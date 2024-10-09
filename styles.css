@@ -1,15 +1,20 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #fff;
+  background-color: #F5E6E8;
+  padding-top: 80px;
 }
 
 header {
   display: flex;
   align-items: center; /* Centre verticalement les éléments */
-  justify-content: space-between; /* Ajoute de l'espace entre le titre et l'image, si nécessaire */
+  justify-content: center; /* Ajoute de l'espace entre le titre et l'image, si nécessaire */
   padding:5px;
+  background-color:#1E2D55;
+  position: fixed;
+  top: 0; /* Ajouté pour fixer le menu en haut */
+    width: 100%; /* Ajouté pour que le menu prenne toute la largeur de la page */
+    z-index: 1000; /* Ajouté pour s'assurer que le menu reste au-dessus des autres éléments */
 }
 
 header img {
@@ -21,17 +26,16 @@ header img {
 
 header h1 {
   margin: 0; /* Enlève les marges par défaut du titre */
+  padding:20px;
+  color: #F5E6E8;
 }
 
 nav {
     background-color: #1E2D55;
     overflow: hidden;
-  }
-  
-  nav {
     float: center;
     display: block;
-    color: #fff;
+    color: #F5E6E8;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -45,28 +49,27 @@ nav {
   nav a:hover {
     color: #ff8309;
   }
+  
 
   main h2 {
     text-align: justify;
-    margin: 2px 20px;
-    padding: 15px;
-    background-color: #fff;
+    margin: 2px 20%;
+    padding-top: 60px;
+    padding-bottom:10px;
     font-size:28px;
   }
 
   main h3{
     text-align: justify;
-    margin: 2px 20px;
+    margin: 2px 19%;
     padding: 15px;
-    background-color: #fff;
     font-size:20px;
   }
 
   main h4{
     text-align: justify;
-    margin: 2px 20px;
+    margin: 2px 19%;
     padding: 15px;
-    background-color: #fff;
     font-size:18px;
   }
 
@@ -74,7 +77,6 @@ nav {
     text-align:justify;
     margin: 2px 20%;
     padding: 2px;
-    background-color: #fff;
     font-size:16px;
     line-height:1.6;
   }
@@ -84,7 +86,8 @@ nav {
     width: 40%; 
     margin-left:auto;
     margin-right:auto;
-    padding: 10px;
+    padding: 40px;
+    
   }
 
   main ul{
@@ -93,6 +96,7 @@ nav {
     text-align:justify;
     padding:2px;
     margin: 2px 20%;
+    line-height: 1.6;
   }
 
 
@@ -100,6 +104,9 @@ nav {
     font-size:16px;
     line-height:1.6;
     text-align:justify;
+    padding:2px;
+    margin: 2px 20%;
+    line-height: 1.6;
   }
 
   footer {
@@ -142,3 +149,34 @@ nav {
   .column a:hover{
     color: #ff8309;
   }
+
+  .line-break {
+    display: block;
+    margin-bottom: 20px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.container {
+  display: flex;
+  align-items: center; /* Centre verticalement les éléments */
+}
+
+.text {
+  margin-right: 20px;
+  padding: 2px;
+}
+
+.image {
+  align-self:center;
+  margin:60px 60px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.image .legend {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.8em;
+}
