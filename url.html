@@ -1,0 +1,69 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>Travail 5XWEB Nathan You-Hout</title>
+</head>
+<body>
+  <header>
+    <h1>Travail 5XWEB-1 Environnement et technologies web</h1>
+    <img src="LOGO ifosup.png" alt="logo de ifosup">
+  </header>
+    <nav>
+        <nav a>
+      <a href="index.html">Accueil</a> |
+      <a href="url.html">URL</a> |
+      <a href="nomdedomaine.html">Nom de domaine</a> |
+      <a href = "standardweb.html">Standards du Web</a> |
+      <a href = "piratage.html">Piratage</a> |
+      <a href="terminologie.html">Terminologie</a> |
+      <a href="metier.html">Métier</a>
+        </nav a>
+    </nav>
+  <main>
+      <h2>Définition de l'URL</h2>
+
+      <p>Une URL (en Anglais Uniform Resource Locator) est l’adresse d’un site web. L’adresse d’un site web, ou plus exactement l’adresse d’une page d’un site internet. Elle est l'adresse unique d'une ressource sur le web et sert à accéder à toutes les formes de ressources telles que les pages HTML, les images, les fichiers CSS, les fichiers JavaScript, etc.</p>
+
+      <p>Une adresse web est composée de plusieurs fragments, obligatoires et optionnels. Elle doit être composé d'un protocole + nom de domaine + extension du nom de domaine [+port par défaut 80 ou 443 en HTTPS] + chemin / route d'accès ou encore slug d'une page [+paramètres][+ancre dans la page].</p>
+
+      <img src = "structureurl.png" alt="structure url">
+      <small class="legend">Crédits: Spread | Structure d'une URL</small> 
+
+      <ul>
+        <li><strong>Le protocole " http:// "</strong> : ce fragment obligatoire indique le protocole qui devrait être utilisé par le navigateur afin de récupérer ou de rediriger les internautes vers le contenu cible de l'URL. Il existe notamment la version sécurisée (HTTPS) et la version communément utilisée (HTTP). Il faut noter que tout Internet fonctionne autour de ces deux types de protocoles. Dans certaines situations, le navigateur pourrait avoir recours à d'autres protocoles tels que le mailto: qui permettra d'ouvrir la boîte mail ou encore le ftp: qui est utilisé pour le transfert de fichiers.</li>
+        <li><strong>Le nom de domaine + extension</strong> : ce fragment obligatoire indique au navigateur le serveur à utiliser pour afficher le contenu du site web. On peut également utiliser une adresse IP à la place de ce nom de domaine. Elle est composé d'un nom, le plus souvent le nom de la marque, voire d’un produit d’une entreprise et d'une extension. L’extension la plus courante pour une entreprise en Belgique est .be ou .com.</li>
+        <li><strong>Le port utilisé sur le serveur </strong>: ce fragment indique la " porte " pour accéder aux ressources à l'intérieur du serveur. Ce type de fragment reste optionnel et de moins en moins utilisé puisque la plupart des navigateurs optent pour les ports standards utilisés par les différents protocoles. A titre d'information, le HTTP utilise le port 80 tandis que le HTTPS utilise le 443. Il faudra cependant indiquer le port utilisé lorsqu'on n'a pas recours aux ports standards. </li>
+        <li><strong>Le chemin " /chemin/vers/monfichier.html " </strong>: au tout début de l'histoire du web, le chemin correspondait réellement à un chemin physique du serveur. Aujourd'hui, ce chemin n'est plus qu'une partie abstraite gérée par le serveur. </li>
+        <li><strong>Les paramètres supplémentaires pour le serveur " ?clé1=valeur1&clé2=valeur2 " </strong>: ils sont construits sous forme d'une liste de valeurs ou de clés qui vont par paire. Ainsi, chaque élément de ces paramètres supplémentaires est séparé par " & ", une esperluette. Avant d'envoyer la ressource, le serveur pourrait utiliser ce type de paramètres afin de réaliser d'autres actions. Il faut préciser que tous les serveurs web peuvent posséder leurs propres règles de paramétrage. </li>
+        <li><strong>Les ancres " #quelquepartdansvotredocument " </strong>: ces fragments optionnels désignent l'emplacement spécifique au sein de la ressource. En quelque sorte, les ancres sont comme des marque-pages à l'intérieur du contenu des sites web. Lorsqu’on utilise une ancre dans une URL, les navigateurs afficheront l'endroit exact où se trouvent ces marque-pages. Il est important de noter que toute autre partie située après l'ancre ne sera pas envoyée au serveur. </li>
+      </ul>
+
+      <p>L’URL est un élément important de la visibilité sur internet. Elle permet aux moteurs de recherche d’identifier très précisément le contenu d’une page internet. Pour cela, il convient d’associer à l’URL, les informations qui caractérisent une page en particulier : ses mots clés. </p>
+      <p>Afin de rediriger les visiteurs vers une page web, un site ou des fichiers, les URLs sont décryptées et résolues selon un processus bien déterminé. Les protocoles TCP/IP, les serveurs, les domaines, les adresses IP, le ping, etc. font partie des éléments pris en compte. Le DNS ou Domain Name System agit en traduisant le nom de domaine contenu dans l'URL en adresse IP. Le serveur DNS est une sorte d'annuaire que consulte un ordinateur afin d'accéder à un autre ordinateur à travers un réseau. Pour émettre et recevoir les données sur un réseau, les URLs passent avant tout par le protocole TCP/IP. Ce dernier agit comme un standard de communication en déterminant les règles inhérentes à l'émission et à la réception de données provenant des ressources liées aux URLs. Il assure la fiabilité du transfert de ces données. Quant au ping, également connu sous le nom de Packet Internet Groper, il fait partie du protocole de connexion TCP/IP. Son rôle majeur consiste à la vérification et au diagnostic de la connexion établie entre une machine et un réseau, par exemple. </p>
+
+      <div class="wrapper--medium">
+        <div class="container_column">
+
+          <div class="column">
+            <h3>Liste des sources pour cette page</h3>
+            <ul>
+              <li><a href="https://blog-fr.orson.io/creation-de-site-internet/definition-url" target ="_blank">Qu’est-ce qu’une URL ? Définitions, fonctions et compositions</a></li>
+              <li><a href="https://www.numacom.fr/blog/qu-est-ce-qu-une-url-definition-et-fonctionnement" target ="_blank">Comprendre ce qu'est une URL</a></li>
+              <li><a href="https://www.spreadfamily.fr/glossaire/url" target ="_blank">URL : définition et décomposition</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <footer>
+    <p>© 2024-2025 Travail de fin de module 5XWEB de Nathan You-Hout</p>
+  </footer>
+</body>
+</html>
