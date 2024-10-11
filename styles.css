@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'roboto', sans-serif;
   margin: 0;
-  background-color: #F5E6E8;
+  background-color: #1E2D55;
   padding-top: 80px;
 }
 
@@ -15,6 +17,7 @@ header {
   top: 0; /* Ajouté pour fixer le menu en haut */
     width: 100%; /* Ajouté pour que le menu prenne toute la largeur de la page */
     z-index: 1000; /* Ajouté pour s'assurer que le menu reste au-dessus des autres éléments */
+    border-bottom:1px solid black;
 }
 
 header img {
@@ -28,6 +31,11 @@ header h1 {
   margin: 0; /* Enlève les marges par défaut du titre */
   padding:20px;
   color: #F5E6E8;
+}
+
+header a {
+  color: #F5E6E8;
+  text-decoration: none;
 }
 
 nav {
@@ -52,11 +60,12 @@ nav {
   
 
   main h2 {
-    text-align: justify;
+    text-align: center;
     margin: 2px 20%;
     padding-top: 60px;
     padding-bottom:10px;
-    font-size:28px;
+    font-size:30px;
+    color:#F5E6E8;
   }
 
   main h3{
@@ -64,6 +73,7 @@ nav {
     margin: 2px 19%;
     padding: 15px;
     font-size:20px;
+    color:#F5E6E8;
   }
 
   main h4{
@@ -71,14 +81,16 @@ nav {
     margin: 2px 19%;
     padding: 15px;
     font-size:18px;
+    color:#F5E6E8;
   }
 
   main p{
     text-align:justify;
-    margin: 2px 20%;
+    margin: 10px 20%;
     padding: 2px;
     font-size:16px;
     line-height:1.6;
+    color:#F5E6E8;
   }
 
   main img {
@@ -87,7 +99,6 @@ nav {
     margin-left:auto;
     margin-right:auto;
     padding: 40px;
-    
   }
 
   main ul{
@@ -96,7 +107,7 @@ nav {
     text-align:justify;
     padding:2px;
     margin: 2px 20%;
-    line-height: 1.6;
+    color:#F5E6E8;
   }
 
 
@@ -106,17 +117,47 @@ nav {
     text-align:justify;
     padding:2px;
     margin: 2px 20%;
-    line-height: 1.6;
+    color:#F5E6E8;
   }
 
   footer {
-    background-color: #1E2D55;
+    background-color: #2D3030;
     overflow: hidden;
     padding:10px;
+    border-top:1px solid black;
   }
 
   footer p {
-    color:#fff;
+    color:#F5E6E8;
+  }
+
+  .cadre{
+    margin-top:120px;
+    margin-left: 60px;
+    margin-right:60px;
+    padding-bottom:20px;
+    border:2px solid black;
+    background-color: #2D3030;
+  }
+
+  .titre{
+    border-bottom:2px solid black;
+    background-color: #2D3030;
+  }
+
+  .titre h2{
+    padding:10px;
+    text-align: center;
+    font-size:30px;
+    color:#F5E6E8;
+  }
+  
+  .cadre img{
+    display:block;
+    width: 60%; 
+    margin-left:auto;
+    margin-right:auto;
+    padding: 40px;
   }
 
   .legend{ 
@@ -124,6 +165,7 @@ nav {
     text-align: center; 
     margin-top: 5px; 
     margin-bottom: 45px; 
+    color:#F5E6E8;
   }
 
   .container_column{
@@ -135,14 +177,16 @@ nav {
     width: 100%;
     padding: 15px;
     border: 1px solid black;
+    background-color: #2D3030;
   }
 
   .column h3{
     text-align: center;
+    color: #F5E6E8;
   }
 
   .column a{
-    color: black;
+    color: #F5E6E8;
     text-decoration:none;
   }
 
@@ -153,6 +197,11 @@ nav {
   .line-break {
     display: block;
     margin-bottom: 20px; /* Ajustez cette valeur selon vos besoins */
+}
+
+.line-break2 {
+  display: block;
+  margin-bottom: 0; /* Ajustez cette valeur selon vos besoins */
 }
 
 .container {
@@ -176,7 +225,20 @@ nav {
 }
 
 .image .legend {
+
   display: block;
   margin-top: 10px;
+  margin-left:60px;
   font-size: 0.8em;
+  color: #F5E6E8;
+  text-align:center;
+}
+
+.black-line {
+    border: 1% solid #F5E6E8;
+    width:60%;
+}
+
+.orange{
+  color:#FF8309;
 }
