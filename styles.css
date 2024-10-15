@@ -68,21 +68,35 @@ nav {
     text-decoration: none;
   }
 
-  .onglet{
-    margin-top:10px;
+  .onglet {
+    margin-top: 10px;
     margin-left: 60px;
-    margin-right:60px;
-    padding-top:20px;
-    padding-bottom:20px;
-    text-align:center;
-    border:2px solid black;
+    margin-right: 60px;
+    text-align: center;
+    border: 2px solid black;
     background-color: #1E2D55;
+    position: relative; /* Ensures the child <a> can be positioned absolutely */
+    height: 60px; /* Set a fixed height for the div */
+  }
+
+  .onglet a {
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    position: absolute; /* Allows the <a> to fill the entire <div> */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Removes underline from links */
+    color: #F5E6E8; /* Adjust the color as needed */
+    background-color: transparent; /* Ensure background is transparent */
   }
   
 
   main h2 {
     text-align: center;
-    margin: 2px 20%;
+    margin: 2px 15%;
     padding-top: 60px;
     padding-bottom:10px;
     font-size:30px;
@@ -91,7 +105,7 @@ nav {
 
   main h3{
     text-align: justify;
-    margin: 2px 18%;
+    margin: 2px 15%;
     padding: 15px;
     font-size:24px;
     color:#F5E6E8;
@@ -99,7 +113,7 @@ nav {
 
   main h4{
     text-align: justify;
-    margin: 2px 18%;
+    margin: 2px 15%;
     padding: 15px;
     font-size:22px;
     color:#F5E6E8;
@@ -107,10 +121,10 @@ nav {
 
   main p{
     text-align:justify;
-    margin: 15px 19%;
+    margin: 6px 16%;
     padding: 2px;
     font-size:16px;
-    line-height:1.6;
+    line-height:1.8;
     color:#F5E6E8;
   }
 
@@ -124,7 +138,7 @@ nav {
 
   main ul{
     font-size:16px;
-    line-height:1.6;
+    line-height:1.8;
     text-align:justify;
     padding:2px;
     margin: 2px 19%;
@@ -134,7 +148,7 @@ nav {
 
   main ol{
     font-size:16px;
-    line-height:1.6;
+    line-height:1.8;
     text-align:justify;
     padding:2px;
     margin: 2px 19%;
@@ -259,6 +273,7 @@ nav {
 .list-item {
   margin-top:30px;
   margin-bottom: 20px; /* Ajustez cette valeur selon vos besoins */
+  padding-bottom:5px;
 }
 
 /* Suppression de la marge pour le premier <li> */
